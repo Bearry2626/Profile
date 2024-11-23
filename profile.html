@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CMD Profile Animation</title>
+    <style>
+      body {
+        background-color: black;
+        color: #00ff00;
+        font-family: "Courier New", Courier, monospace;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        text-align: center;
+      }
+      .profile {
+        border: 2px solid #00ff00;
+        padding: 20px;
+        border-radius: 10px;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="profile hidden" id="profile">
+      <h1 id="name"></h1>
+      <p id="studentId"></p>
+    </div>
+
+    <!-- เรียกใช้ไฟล์ JavaScript ภายนอก -->
+    <script src="script.js"></script>
+  </body>
+</html>
